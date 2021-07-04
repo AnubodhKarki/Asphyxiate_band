@@ -180,17 +180,29 @@ html,body{
     padding-left: 10px;
     color: rgb(153, 150, 150);
     font-weight: bold;
-    width: 10%;
+    width: 11%;
 }
 
 .tour-city{
-    width: 23%
+    width: 24%
 }
 
 .tour-arena{
-    width: 37%;
+    width: 40%;
 }
 
 .tour-btn{
-    max-width:18%;
+    max-width:19%;
+}
+
+.btn-primary{
+    color: black;
+    background-color: rgb(255, 183, 0);
+    border:none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background-color: rgb(4, 255, 192);
 }
