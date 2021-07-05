@@ -204,5 +204,147 @@ html,body{
 }
 
 .btn-primary:hover{
-    background-color: rgb(4, 255, 192);
+    background-color: rgb(23, 184, 143);
+}
+
+.shop-item{
+    margin: 30px;
+}
+
+.shop-item-title{
+    display: block;
+    width:100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.shop-item-image{
+    width: 250px;
+    height: 255px;
+}
+
+.shop-item-details{
+    display:flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price{
+    flex-grow: 1;
+}
+
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+}
+
+.cart-header{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.cart-column{
+    display: flex;
+    border-bottom: 1px solid goldenrod;
+    margin-right:1.5em;
+    align-items: center;
+    justify-content: right;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row{
+    display: flex;
+}
+
+.cart-item{
+    width:45%;
+}
+
+.cart-price{
+    width:20%;
+}
+
+.cart-quantity{
+    width: 35%;
+}
+
+.cart-item-title{
+    margin-left: .6em
+}
+
+.cart-item-image{
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+    border: 1px solid greenyellow;
+}
+
+.btn-danger{
+    color: black;
+    background-color: rgb(255, 183, 0);
+    border-radius: .3em;
+    font-weight: bold;
+    border:none
+}
+
+.btn-danger:hover{
+    background-color: red;
+}
+
+.cart-quantity-input{
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    background-color: whitesmoke;
+    color: darkslategray;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:first-child .cart-column{
+    border: none;
+}
+.cart-row:first-child{
+    border-bottom: 1px solid goldenrod;
+}
+
+.cart-row:last-child .cart-column{
+    border: none;
+}
+
+.cart-row:last-child{
+    border-bottom: 2px solid goldenrod;
+}
+
+.cart-total{
+    text-align:center;
+    margin:10px;
+}
+
+.cart-total-title{
+    font-weight: bold;
+    font-size: 1.2em;
+    color:rgb(189, 186, 186);
+    margin-right:20px;
+}
+
+.cart-total-price{
+    font-size: 1.1em;
+    margin:20px;
+    color: whitesmoke;
+}
+
+.btn-purchase{
+    display:block;
+    margin: 40px auto 80px auto;
+    font-size:1em;
+    border:2px solid darkturquoise;
 }
