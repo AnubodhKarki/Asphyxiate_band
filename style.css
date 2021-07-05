@@ -30,6 +30,29 @@ html,body{
     opacity: 0.85;
 }
 
+.main-body-index{
+    background-image: url("media/ember1.gif");
+    background-size:cover;
+    /*
+    background-image: url('http://gph.is/1bq9Cha');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    */
+}
+
+.main-body{
+    background-image: url("media/skitter.jpg");
+    background-color: rgb(0, 0, 0, 0.45);
+    background-blend-mode: multiply;
+    background-size:cover;
+}
+
+.about-content{
+    opacity: 0.85;
+}
+
 .main-nav{
     text-align: center;
     font-size: 1.2em;
@@ -53,7 +76,7 @@ html,body{
     /* //FOR HEADER BACKGROUND*/
     background-image: url('media/skitter.jpg');
     background-size:cover;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.91);
     background-blend-mode:multiply;
     padding-bottom: 0px;
 }
@@ -74,7 +97,7 @@ html,body{
 
 .content-section{
     /*spacing on side*/
-    background-color: black;
+    background-color: rgb(0, 0, 0, 0.85);
     margin: 1em;
 }
 
@@ -98,13 +121,14 @@ html,body{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    opacity: 0.8;
 }
 
 .main-footer{
     background-image: url('media/skitter.jpg');
     background-size:cover;
     background-color: rgba(0, 0, 0, 0.9);
-    background-blend-mode:multiply;
+    background-blend-mode:soft-light;
     padding: .25em 0;
 }
 
