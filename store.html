@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href = "style.css" />
+    <script src="store.js" async></script>
+
     <title>Asphyxiate | Store</title>
 </head>
 <body class="main-body">
@@ -61,6 +63,7 @@
     <section class="container content-section">
         <h2 class="section-header">CART</h2>
         <div class="cart-items">
+            
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">ITEM</span>
                 <span class="cart-price cart-header cart-column">PRICE</span>
@@ -75,7 +78,7 @@
                 <span class="cart-price cart-column">$59.99</span>
                 <div class="cart-quantity cart-column">
                     <input class="cart-quantity-input" type="number" value="1">
-                    <button class="btn btn-danger" role="button">Remove</button>
+                    <button class="btn btn-danger" type="button">Remove</button>
                 </div>
             </div>
 
@@ -86,17 +89,16 @@
                 </div>  
                 <span class="cart-price cart-column">$29.99</span>
                 <div class="cart-quantity cart-column">
-                    <input class="cart-quantity-input" type="number" value="1">
-                    <button class="btn btn-danger" role="button">Remove</button>
+                    <input class="cart-quantity-input" type="number" value="2">
+                    <button class="btn btn-danger" type="button">Remove</button>
                 </div>
             </div>      
         </div> 
-    <div>
     <div class="cart-total">
         <strong class="cart-total-title">Total</strong>
         <span class="cart-total-price">$89.98</span>
     </div>
-        <button class="btn btn-primary btn-purchase"role="button">PURCHASE</button>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
         </section>
 
     <footer class="main-footer">
