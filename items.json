@@ -1,0 +1,25 @@
+{
+    "music": [
+        {
+            "id":1,
+            "name": "Asphxyiate (Self Titled Album)",
+            "price": 999,
+            "imgName": "Asphyxiate Artwork.jpg"
+        }
+    ],
+    "merch":[
+        {
+            "id":2,
+            "name": "Asphxyiate Bundle",
+            "price": 5999,
+            "imgName": "Merch.jpg"
+        },
+
+        {
+            "id":3,
+            "name": "Hoodie",
+            "price": 2999,
+            "imgName": "MerchHoodie.jpg"
+        }
+    ]
+}

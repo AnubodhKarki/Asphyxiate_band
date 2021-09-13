@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "style.css" />
+    <script src="https://checkout.stripe.com/checkout.js" defer></script>
+    <script>
+        var stripePublicKey = '<%= stripePublicKey %>'
+    </script>
+    <script src="store.js" defer></script>
+
+    <title>Asphyxiate | Store</title>
+</head>
+<body class="main-body">
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="store">STORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+
+       <!--<h1>Asphyxiate</h1>-->
+      <img class="band-logo" src="media\Asphyxiate.png">
+    </header>
+    <section class="container content-section">
+        <h2 class="section-header">MUSIC</h2>
+        <div class="shop-items">
+            <% items.music.forEach(function(item){ %>
+                <div class="shop-item" data-item-id="<%= item.id %>">
+                    <span class="shop-item-title"><%= item.name %></span>
+                    <img class="shop-item-image" src="media/<%= item.imgName %>">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$<%= item.price / 100 %></span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">MERCH</h2>
+        <div class="shop-items">
+            <% items.merch.forEach(function(item){ %>
+                <div class="shop-item" data-item-id="<%= item.id %>">
+                    <span class="shop-item-title"><%= item.name %></span>
+                    <img class="shop-item-image" src="media/<%= item.imgName %>">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$<%= item.price / 100 %></span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+        <h3 class="band-name">ASPHYXIATE</h3>
+        <ul class="nav footer-nav">
+            <li>
+                <a href="https://youtu.be/Kvodx9HI2nU"target=_blank>
+                <img src="media\YouTube Logo.png"></a>
+            </li>
+            <li>
+                <a href="https://open.spotify.com/artist/2Zh3laqouOQ3AZaxcRFTGi?si=brvNzsiZSYeaRlDt9yOw-A"target=_blank>
+                <img src="media\Spotify Logo.png"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/asphyxiatenep" target=_blank>
+                <img src="media\Facebook Logo.png"></a>
+            </li>
+        </ul>
+        </div>
+    </footer>
+        
+</body>
+</html>

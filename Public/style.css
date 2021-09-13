@@ -277,7 +277,7 @@ html,body{
     border-bottom: 1px solid goldenrod;
     margin-right:1.5em;
     align-items: center;
-    justify-content: right;
+    justify-content: left;
     padding-bottom: 10px;
     margin-top: 10px;
 }
