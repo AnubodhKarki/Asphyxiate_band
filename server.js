@@ -57,5 +57,7 @@ if (process.env.NODE_ENV !== 'production') {
     })
   })
   
-  app.listen(process.env.PORT || 5000)
-  module.exports = app
+  const port =process.env.port || 3000;
+  app.listen(port, () =>{
+    console.log("Asphyxiate!");
+  });
