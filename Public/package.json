@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AnubodhKarki/Band-website.git"
+    "url": "git+https://github.com/AnubodhKarki/Asphyxiate_band.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AnubodhKarki/Band-website/issues"
+    "url": "https://github.com/AnubodhKarki/Asphyxiate_band.git/issues"
   },
-  "homepage": "https://github.com/AnubodhKarki/Band-website#readme",
+  "homepage": "https://github.com/AnubodhKarki/Asphyxiate_band.git#readme",
   "description": "",
   "dependencies": {
     "ejs": "^3.1.6",
