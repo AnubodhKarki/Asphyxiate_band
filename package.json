@@ -16,7 +16,6 @@
     "url": "https://github.com/AnubodhKarki/Asphyxiate_band.git/issues"
   },
   "homepage": "https://github.com/AnubodhKarki/Asphyxiate_band.git#readme",
-  "description": "",
   "dependencies": {
     "aws-sdk": "^2.989.0",
     "ejs": "^3.1.6",
@@ -26,5 +25,6 @@
   },
   "devDependencies": {
     "dotenv": "^10.0.0"
-  }
+  },
+  "description": ""
 }
