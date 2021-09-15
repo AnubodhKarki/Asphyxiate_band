@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href = "style.css" />
+    <script src="index.js" defer></script>
     <title>Asphyxiate</title>
 
 </head>
@@ -21,11 +22,19 @@
        <!--<h1>Asphyxiate</h1>-->
       <img class="band-logo" src="media\Asphyxiate.png">
       <div class="container">
-        <button class="btn btn-header" type="button">Get our latest music</button>
+        <button class="btn btn-header" type="button" onclick="window.open('https://asphyxiatenepal.bandcamp.com/album/asphyxiate-self-titled-ep')">Get our latest music</button>
         <br>
     </div>
-        <!--Put the music-->       
-        <button class="btn btn-header btn-play">&#9658</button>
+
+    <div class='audio-container'>
+        <audio controls id = "audio">
+            <source src="media/Abortion.mp3" type="audio/mpeg">
+        </audio>  
+        <!--  
+        <button id="playPauseBTN" onclick="playPause()" class="btn btn-header btn-play">&#9658</button>
+        -->
+    </div>
+        
         <br>
     </header>
 
@@ -33,24 +42,24 @@
         <h2 class="section-header">TOURS</h2>
         <div>
             <div class="tour-row">
-                <strong class="tour-item tour-date">AUG 16</strong>
+                <strong class="tour-item tour-date">NOV 16</strong>
                 <span class="tour-item tour-location">Kathmandu, Nep</span>
                 <span class="tour-item tour-arena">Jazz Consortium</span>
-                <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button>
+                <button type="button" class="btn tour-item tour-btn btn-primary" onclick="ticketAlert()">BUY TICKETS</button>
             </div>
 
             <div class="tour-row">
-                <strong class="tour-item tour-date">AUG 20</strong>
+                <strong class="tour-item tour-date">DEC 20</strong>
                 <span class="tour-item tour-location">North Sikkim, Ind</span>
                 <span class="tour-item tour-arena">The Hill Hall</span>
-                <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button>
+                <button type="button" class="btn tour-item tour-btn btn-primary" onclick="ticketAlert()">BUY TICKETS</button>
             </div>
 
             <div class="tour-row">
-                <strong class="tour-item tour-date">AUG 25</strong>
+                <strong class="tour-item tour-date">DEC 6</strong>
                 <span  class="tour-item tour-location">Hong -Kong, Chn</span>
                 <span class="tour-item tour-arena">Rock Angel Band House</span>
-                <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button>
+                <button type="button" class="btn tour-item tour-btn btn-primary" onclick="ticketAlert()">BUY TICKETS</button>
             </div>
         </div>
     </section>
