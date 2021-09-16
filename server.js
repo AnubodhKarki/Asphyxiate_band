@@ -13,6 +13,10 @@ if (process.env.NODE_ENV !== 'production') {
   app.set('view engine', 'ejs')
   app.use(express.json())
   app.use(express.static('public'))
+
+  app.get("/", function (req, res){
+    res.send("It worked")
+  })
   
   app.get('/store', function(req, res) {
     fs.readFile('items.json', function(error, data) {
@@ -57,7 +61,7 @@ if (process.env.NODE_ENV !== 'production') {
     })
   })
   
-  const port =process.env.port || 3000;
+  const port =(process.env.PORT || 3000);
   app.listen(port, () =>{
     console.log("Asphyxiate!");
   });
