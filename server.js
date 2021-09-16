@@ -14,8 +14,14 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(express.json())
   app.use(express.static('public'))
 
+  app.use(bodyParser.urlencoded({
+    extended: true
+  }));
+  app.use(bodyParser.json());
+  
+
   app.get("/", function (req, res){
-    res.render('Public/index.html')
+    res.render('index.html')
   })
   
   app.get('/store', function(req, res) {
