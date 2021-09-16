@@ -15,7 +15,7 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(express.static('public'))
 
   app.get("/", function (req, res){
-    res.send("It worked")
+    res.render('Public/index.html')
   })
   
   app.get('/store', function(req, res) {
