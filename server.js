@@ -27,7 +27,16 @@ if (process.env.NODE_ENV !== 'production') {
     res.render('Views/store.ejs')
   })
 
-  
+  app.get("/index", function (req, res){
+    res.render('public/index.html')
+  })
+
+  app.get('/about', function(req, res) {
+    res.sendFile('public/about.html', {root: __dirname })
+});
+
+
+
   app.get('/store', function(req, res) {
     fs.readFile('items.json', function(error, data) {
       if (error) {
