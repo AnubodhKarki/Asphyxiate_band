@@ -21,7 +21,7 @@ if (process.env.NODE_ENV !== 'production') {
   
 
   app.get("/", function (req, res){
-    res.render('index.html')
+    res.render('Views/store.ejs')
   })
   
   app.get('/store', function(req, res) {
