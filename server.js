@@ -10,23 +10,17 @@ if (process.env.NODE_ENV !== 'production') {
   const fs = require('fs')
   const stripe = require('stripe')(stripeSecretKey)
   
-  //app.set('view engine', 'ejs')
+  app.set('view engine', 'ejs')
   app.use(express.json())
-  // Require static assets from public folder
   app.use(express.static('public'))
-  
-
-  // Set view engine as EJS
-  app.engine('ejs', require('ejs').renderFile);
-  app.set('view engine', 'ejs');
-  // Set 'views' directory for any views 
-  // being rendered res.render()
-  app.set('views', ('Views'));
-  app.use('/form', express.static(__dirname + '/index.html')); 
 
   app.get("/", function (req, res){
-    res.render('Views/store.ejs')
+    res.render('index')
   })
+
+  app.get('/', (req, res) => {
+    res.sendFile('index.html')
+    })
   
   app.get('/store', function(req, res) {
     fs.readFile('items.json', function(error, data) {
