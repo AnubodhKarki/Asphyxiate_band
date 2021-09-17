@@ -32,7 +32,7 @@ if (process.env.NODE_ENV !== 'production') {
   })
 
   app.get('/about', function(req, res) {
-    res.sendFile('./public/about.html', {root: __dirname })
+    res.sendFile('./public/about.html')
 });
 
 
