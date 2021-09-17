@@ -14,7 +14,7 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(express.json())
   app.use(express.static('public'))
   app.engine('html', require('ejs').renderFile);
-  
+
   // Set view engine as EJS
   app.engine('ejs', require('ejs').renderFile);
   app.set('view engine', 'ejs');
@@ -28,11 +28,11 @@ if (process.env.NODE_ENV !== 'production') {
   })
 
   app.get("/index", function (req, res){
-    res.render('public/index.html')
+    res.render('./public/index.html')
   })
 
   app.get('/about', function(req, res) {
-    res.sendFile('public/about.html', {root: __dirname })
+    res.sendFile('./public/about.html', {root: __dirname })
 });
 
 
