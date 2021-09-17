@@ -14,17 +14,19 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(express.json())
   app.use(express.static('public'))
 
-  app.get("/index", function (req, res){
-    res.sendFile('index.html')
-  })
 
-  app.get("/about", function (req, res){
-    res.render('about')
-  })
+  // Set view engine as EJS
+  app.engine('ejs', require('ejs').renderFile);
+  app.set('view engine', 'ejs');
+  // Set 'views' directory for any views 
+  // being rendered res.render()
+  app.set('views', ('Views'));
+  app.use('/form', express.static(__dirname + '/index.html')); 
 
   app.get("/", function (req, res){
     res.render('Views/store.ejs')
   })
+
   
   app.get('/store', function(req, res) {
     fs.readFile('items.json', function(error, data) {
