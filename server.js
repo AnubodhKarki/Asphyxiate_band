@@ -24,6 +24,7 @@ if (process.env.NODE_ENV !== 'production') {
 
   app.get("/", function (req, res){
     res.render('Views/store.ejs')
+  })
   
   app.get('/store', function(req, res) {
     fs.readFile('items.json', function(error, data) {
