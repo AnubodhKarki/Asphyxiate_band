@@ -19,7 +19,7 @@ if (process.env.NODE_ENV !== 'production') {
   })
 
   app.get("/about", function (req, res){
-    res.render('about.html')
+    res.render('about')
   })
 
   app.get("/", function (req, res){
