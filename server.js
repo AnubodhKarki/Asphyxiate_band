@@ -17,7 +17,7 @@ if (process.env.NODE_ENV !== 'production') {
 
   // Set view engine as EJS
   app.engine('ejs', require('ejs').renderFile);
-  app.set('view engine', 'ejs');
+  //app.set('view engine', 'ejs');
   // Set 'views' directory for any views 
   // being rendered res.render()
   app.set('views', ('Views'));
@@ -32,7 +32,7 @@ if (process.env.NODE_ENV !== 'production') {
   })
 
   app.get('/about', function(req, res) {
-    res.sendFile('./public/about.html')
+    res.sendFile('public/about.html')
 });
 
 
