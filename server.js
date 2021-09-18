@@ -28,11 +28,11 @@ if (process.env.NODE_ENV !== 'production') {
   })
 
   app.get("/index", function (req, res){
-    res.render('./public/index.html')
+    res.render('index.html')
   })
 
   app.get('/about', function(req, res) {
-    res.sendFile('public/about.html', {root: __dirname })
+    res.sendFile('about', {root: __dirname })
 });
 
 
