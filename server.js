@@ -12,8 +12,8 @@ if (process.env.NODE_ENV !== 'production') {
   
   app.set('view engine', 'ejs')
   app.use(express.json())
-  app.use(express.static('images'))
-  app.use('/', express.static('public'));
+  //app.use(express.static('images'))
+  app.use('/public/media/', express.static('./public/media'));
   app.engine('html', require('ejs').renderFile);
 
   // Set view engine as EJS
