@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');/* font-family: 'Metal Mania', cursive; */
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(121, 121, 121);
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul{
+    margin:0;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    font-family: 'Cinzel Decorative', cursive;
+    display:inline-block;
+    padding: .5em;
+    color: rgb(235, 235, 235);
+    text-decoration:none;
+    opacity: 0.85;
+}
+
+.main-body-index{
+    background-image: url("media/ember1.gif"),url("media/skitter_emptyBack.png");
+    background-size:1500px;
+    background-blend-mode:soft-light;
+    /*
+    background-image: url('http://gph.is/1bq9Cha');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    */
+}
+
+.main-body{
+    background-image: url("media/ember1.gif"), url("media/skitter_emptyBack.png");
+    background-size: 1500px;
+    background-blend-mode:overlay;
+}
+
+.about-content{
+    opacity: 0.85;
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: normal;
+    border-bottom: 1px solid grey;
+}
+.main-nav li{
+    padding: 0 5%;
+}
+
+.nav a:hover{
+    font-size: 97%;
+    font-weight:bold;
+    color: rgb(27, 23, 23);
+    background-color: rgb(207, 130, 5);
+    background-blend-mode: soft-light;
+    opacity: 1;
+}
+
+.main-header{
+    /* //FOR HEADER BACKGROUND*/
+    background-image: url('media/skitter.jpg');
+    background-size:cover;
+    background-color: rgba(0, 0, 0, 0.91);
+    background-blend-mode:multiply;
+    padding-bottom: 0px;
+}
+
+.band-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding: 0%;
+}
+
+.band-name{
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bold;
+    margin: 1.4em;
+}
+
+.content-section{
+    /*spacing on side*/
+    background-color: rgb(0, 0, 0, 0.86);
+    margin: 1em;
+}
+
+.container{
+    max-width: 900px;
+    margin:0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header{
+    font-family: 'Cinzel Decorative', cursive;
+    color: rgb(235, 235, 235);
+    opacity: 0.85;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.about-band-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    opacity: 1;
+}
+
+.main-footer{
+    background-image: url('media/skitter.jpg');
+    background-size:cover;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-blend-mode:soft-light;
+    padding: .25em 0;
+}
+
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li{
+    padding: 0 0.4em;
+}
+
+.footer-nav img{
+    width: 20px;
+}
+
+.btn{
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor:pointer;
+}
+
+.btn-header{
+    display: block;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.7);
+    border:2px solid rgb(247, 161, 3, 0.45);
+    background-color: rgba(187, 174, 174, 0.1);
+    border-radius: 15px;
+    font-size: 0.9em;
+    font-weight: lighter;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.btn-header:hover{
+    background-color: rgba(243, 190, 92, 0.45);
+}
+
+.btn-play{
+    display: block;
+    margin: 0 auto;
+    color:darkgoldenrod;
+    font-size: 4em;
+    border-radius: 50%;
+    padding:0;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.tour-row{
+    border-bottom: 1px solid rgb(92, 92, 92);
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child{
+    border-bottom: none;
+}
+
+.tour-item{
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date{
+    padding-left: 10px;
+    color: rgb(153, 150, 150);
+    font-weight: bold;
+    width: 11%;
+}
+
+.tour-city{
+    width: 24%
+}
+
+.tour-arena{
+    width: 40%;
+    padding-left: 50px;
+}
+
+.tour-btn{
+    max-width:19%;
+}
+
+.btn-primary{
+    color: black;
+    background-color: rgb(255, 183, 0);
+    border:none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background-color: rgb(23, 184, 143);
+}
+
+.shop-item{
+    margin: 30px;
+}
+
+.shop-item-title{
+    display: block;
+    width:100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.shop-item-image{
+    width: 250px;
+    height: 255px;
+}
+
+.shop-item-details{
+    display:flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price{
+    flex-grow: 1;
+}
+
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+}
+
+.cart-header{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.cart-column{
+    display: flex;
+    border-bottom: 1px solid goldenrod;
+    margin-right:1.5em;
+    align-items: center;
+    justify-content: left;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row{
+    display: flex;
+}
+
+.cart-item{
+    width:45%;
+}
+
+.cart-price{
+    width:20%;
+}
+
+.cart-quantity{
+    width: 35%;
+}
+
+.cart-item-title{
+    margin-left: .6em
+}
+
+.cart-item-image{
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+    border: 1px solid greenyellow;
+}
+
+.btn-danger{
+    color: black;
+    background-color: rgb(255, 183, 0);
+    border-radius: .3em;
+    font-weight: bold;
+    border:none
+}
+
+.btn-danger:hover{
+    background-color: red;
+}
+
+.cart-quantity-input{
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    background-color: whitesmoke;
+    color: darkslategray;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:first-child .cart-column{
+    border: none;
+}
+.cart-row:first-child{
+    border-bottom: 1px solid goldenrod;
+}
+
+.cart-row:last-child .cart-column{
+    border: none;
+}
+
+.cart-row:last-child{
+    border-bottom: 2px solid goldenrod;
+}
+
+.cart-total{
+    text-align:center;
+    margin:10px;
+}
+
+.cart-total-title{
+    font-weight: bold;
+    font-size: 1.2em;
+    color:rgb(189, 186, 186);
+    margin-right:20px;
+}
+
+.cart-total-price{
+    font-size: 1.1em;
+    margin:20px;
+    color: whitesmoke;
+}
+
+.btn-purchase{
+    display:block;
+    margin: 40px auto 80px auto;
+    font-size:1em;
+    border:2px solid darkturquoise;
+}
