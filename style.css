@@ -31,7 +31,7 @@ html,body{
 }
 
 .main-body-index{
-    background-image: url("images/ember1.gif"),url("images/skitter_emptyBack.png");
+    background-image: url("./ember1.gif"),url("images/skitter_emptyBack.png");
     background-size:1500px;
     background-blend-mode:soft-light;
     /*
