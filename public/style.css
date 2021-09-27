@@ -31,7 +31,7 @@ html,body{
 }
 
 .main-body-index{
-    background-image: url("images/"),url("images/skitter_emptyBack.png");
+    background-image: url("images1/"),url("images1/skitter_emptyBack.png");
     background-size:1500px;
     background-blend-mode:soft-light;
     /*
@@ -44,7 +44,7 @@ html,body{
 }
 
 .main-body{
-    background-image: url("images/ember1.gif"), url("images/skitter_emptyBack.png");
+    background-image: url("images1/ember1.gif"), url("images1/skitter.jpg");
     background-size: 1500px;
     background-blend-mode:overlay;
 }
@@ -74,7 +74,7 @@ html,body{
 
 .main-header{
     /* //FOR HEADER BACKGROUND*/
-    background-image: url('images/skitter.jpg');
+    background-image: url('images1/skitter.jpg');
     background-size:cover;
     background-color: rgba(0, 0, 0, 0.91);
     background-blend-mode:multiply;
@@ -125,7 +125,7 @@ html,body{
 }
 
 .main-footer{
-    background-image: url('images/skitter.jpg');
+    background-image: url('images1/skitter.jpg');
     background-size:cover;
     background-color: rgba(0, 0, 0, 0.9);
     background-blend-mode:soft-light;
